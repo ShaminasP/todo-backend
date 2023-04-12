@@ -20,7 +20,7 @@ const toRegister = async (req, res) => {
     res.status(200).json({ message: "Successfully Registered" });
   } catch (error) {
     console.log(error);
-    res.status(500).json(error?.response?.data);
+    res.status(500).json({ err });
   }
 };
 
@@ -38,7 +38,7 @@ const toLogin = async (req, res) => {
     res.status(200).json(token);
   } catch (error) {
     console.log(error);
-    res.status(500).json(error?.response?.data);
+    res.status(500).json({ error: error.message });
   }
 };
 
