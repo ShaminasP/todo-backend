@@ -8,7 +8,15 @@ const userRoute = require("./Routes/userRoute");
 const toDoRoute = require("./Routes/toDoRoute");
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: "https://todo-wa1k.onrender.com",
+  methods: "GET,POST,PATCH,PUT,DELETE",
+  preflightContinue: true,
+  optionsSuccessStatus: 200,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 connectDB();
 app.use("/", userRoute);

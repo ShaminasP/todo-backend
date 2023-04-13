@@ -13,8 +13,9 @@ const toDoSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      default: "1-Pending",
+      default: "Pending",
     },
+   
     user: {
       type: mongoose.Types.ObjectId,
       ref: "User",
