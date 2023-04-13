@@ -10,4 +10,6 @@ The frontend for this project is hosted at  https://todo-wa1k.onrender.com.
 The API endpoint for this project is hosted at https://todo-backend-h63u.onrender.com.
 
 ![Alt text](https://github.com/ShaminasP/todo-backend/blob/main/images/homepage.png "Home page")
+![Alt text](/images/reportpage.png "report page")
+
 
