@@ -9,6 +9,12 @@ The frontend for this project is hosted at  https://todo-wa1k.onrender.com.
 
 The API endpoint for this project is hosted at https://todo-backend-h63u.onrender.com.
 
+## API Documentation
+
+The documentation for the todo-side API can be found at https://documenter.getpostman.com/view/25828623/2s93Xwz4FP
+
+The documentation for the user-side API can be found at https://documenter.getpostman.com/view/25828623/2s93Xwz4Kh
+
 ![Home page](https://github.com/ShaminasP/todo-backend/blob/main/images/homepage.jpeg "Home page")
 
 
