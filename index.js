@@ -1,5 +1,7 @@
-const express = require("express");
-const dotenv = require("dotenv");
+const express = require("express"); 
+const dotenv = require("dotenv"); 
+
+
 const cors = require("cors");
 dotenv.config();
 const connectDB = require("./Config/db");
@@ -8,6 +10,8 @@ const userRoute = require("./Routes/userRoute");
 const toDoRoute = require("./Routes/toDoRoute");
 
 const app = express();
+
+//cors configuration
 const corsOptions = {
   origin: "https://todo-wa1k.onrender.com",
   methods: "GET,POST,PATCH,PUT,DELETE",
@@ -18,9 +22,14 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// DB configuration
 connectDB();
+
+// routes configuration
 app.use("/", userRoute);
 app.use("/todo", toDoRoute);
+
 
 app.listen(process.env.PORT || 3000, () =>
   console.log(`running on port ${process.env.PORT}`)

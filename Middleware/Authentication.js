@@ -1,5 +1,8 @@
 const JWT = require("jsonwebtoken");
 
+
+// JWT Authentication
+
 const authVerify = async (req, res, next) => {
   let token;
   if (
